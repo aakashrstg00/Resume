@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aakash Rastogi | WebResume</title>
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="stylesheets/index.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-brand">
+            <li class="nav-brand-item">
+                <img src="./images/logo.png" alt="">
+            </li>
+        </ul>
+        <ul class="nav-list">
+            <li class="nav-list-item">Home</li>
+            <li class="nav-list-item">About</li>
+            <li class="nav-list-item">Skills</li>
+            <li class="nav-list-item">Projects</li>
+            <li class="nav-list-item">Contact Me</li>
+        </ul>
+    </nav>
+    <div id="banner">
+        <p class="title">Aakash Rastogi</p>
+        <p class="description">
+            Hard working web developer with a flair for creating elegant solutions in the least amount of time. Developed a customer
+            web-portal, a mailer, a blogging app, a GPS tracking app and a parking management system. Passionate about machine
+            learning, artificial intelligence and cloud computing.
+        </p>
+        <span>&#xf078;</span>
+    </div>
+    <div id="about">
+        <h2>About Me</h2>
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="content">
+                        <h3>What are you?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dicta nisi doloribus quo, a
+                            temporibus impedit architecto dolor laboriosam ea harum? Adipisci repellendus rem odit vel aliquam
+                            expedita, tempora nisi? Iste quia non fugit sequi fuga voluptatem consectetur recusandae minus
+                            eaque doloremque culpa, illo nulla vel corrupti quae aspernatur dignissimos. Expedita maiores
+                            illo cumque veniam, sed doloribus debitis temporibus laudantium.</p>
+                    </div>
+                    <div class="time">
+                        <h4>January 2018</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>What are you?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dicta nisi doloribus quo, a
+                            temporibus impedit architecto dolor laboriosam ea harum? Adipisci repellendus rem odit vel aliquam
+                            expedita, tempora nisi? Iste quia non fugit sequi fuga voluptatem consectetur recusandae minus
+                            eaque doloremque culpa, illo nulla vel corrupti quae aspernatur dignissimos. Expedita maiores
+                            illo cumque veniam, sed doloribus debitis temporibus laudantium.</p>
+                    </div>
+                    <div class="time">
+                        <h4>January 2018</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>What are you?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dicta nisi doloribus quo, a
+                            temporibus impedit architecto dolor laboriosam ea harum? Adipisci repellendus rem odit vel aliquam
+                            expedita, tempora nisi? Iste quia non fugit sequi fuga voluptatem consectetur recusandae minus
+                            eaque doloremque culpa, illo nulla vel corrupti quae aspernatur dignissimos. Expedita maiores
+                            illo cumque veniam, sed doloribus debitis temporibus laudantium.</p>
+                    </div>
+                    <div class="time">
+                        <h4>January 2018</h4>
+                    </div>
+                </li>
+                <div style="clear: both;"></div>
+            </ul>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <img src="./images/icon.png" alt="">
+                <p>HTML</p>
+            </div>
+            <div class="feature">
+                <img src="./images/icon.png" alt="">
+                <p>CSS</p>
+            </div>
+            <div class="feature">
+                <img src="./images/icon.png" alt="">
+                <p>JavaScript</p>
+            </div>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <img src="./images/icon.png" alt="">
+                <p>Node.js</p>
+            </div>
+            <div class="feature">
+                <img src="./images/icon.png" alt="">
+                <p>Angular</p>
+            </div>
+            <div class="feature">
+                <img src="./images/icon.png" alt="">
+                <p>MongoDB</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul class="social">
+            <li>
+                <img src="./images/facebook.png" alt="">
+            </li>
+            <li>
+                <img src="./images/linkedin-logo-button.png" alt="">
+            </li>
+            <li>
+                <img src="./images/twitter-logo-button.png" alt="">
+            </li>
+            <li>
+                <img src="./images/google-plus-logo-button.png" alt="">
+            </li>
+        </ul>
+        Copyright &copy; Aakash Rastogi, 2018
+    </footer>
+    <script src="./libs/jquery.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $(document).scroll(() => {
+                var scroll = $(document).scrollTop();
+                if (scroll > 10) {
+                    $('nav').addClass('scrolled');
+                } else {
+                    $('nav').removeClass('scrolled');
+                }
+            });
+            $('#banner span').click(() => {
+                $("html, body").animate({
+                    scrollTop: $('#about').offset().top - 64
+                }, 500);
+            });
+        });
+    </script>
+</body>
+
+</html>
